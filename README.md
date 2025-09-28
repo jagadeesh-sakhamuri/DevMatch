@@ -2,7 +2,6 @@
 
 ## Welcome to RideX! Your Future of Vehicle Shopping.
 
-### Problem We Solved
 
 Have you ever tried to buy a bike online? It's a mess! You jump between manufacturers, check sketchy used sites, and then go searching for an EMI calculator. **RideX was born to end that frustration.**
 
@@ -15,8 +14,7 @@ We built one single, powerful platform that acts as the ultimate digital showroo
 Our project is powered by a robust, scalable **Node.js/Express** backend and a smooth **React.js** frontend, designed for rapid feature scaling.
 
 ### Frontend Highlights (React.js)
-* **Zero-Friction UX:** We replaced clunky navigation with a modern, full-screen search experience.
-* **Dynamic Carousels:** Inventory is displayed using smooth, responsive **image carousels** (React Slick), ensuring every vehicle looks professional.
+* **Dynamic Carousels:** Inventory is displayed using smooth, responsive **image carousels**, ensuring every vehicle looks professional.
 * **The Power of Portals:** Critical details (like vehicle specs and seller info) pop up instantly in a layered modal (React Portals) when you click a card, without losing your place on the main page.
 
 ### Backend Infrastructure (Node.js/Express Ready)
