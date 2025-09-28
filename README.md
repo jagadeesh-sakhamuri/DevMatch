@@ -9,13 +9,13 @@ We built one single, powerful platform that acts as the ultimate digital showroo
 
 ---
 
-## 🛠️ The Build: Architecture at a Glance
-
-Our project is powered by a robust, scalable **Node.js/Express** backend and a smooth **React.js** frontend, designed for rapid feature scaling.
+## 🛠️ Tech Stack & Architecture
 
 ### Frontend Highlights (React.js)
-* **Dynamic Carousels:** Inventory is displayed using smooth, responsive **image carousels**, ensuring every vehicle looks professional.
-* **The Power of Portals:** Critical details (like vehicle specs and seller info) pop up instantly in a layered modal (React Portals) when you click a card, without losing your place on the main page.
+* **Zero-Friction UX:** We replaced clunky navigation with a modern, full-screen search experience, managed by **`Navbar.jsx`** and **`SearchSuggestions.jsx`**.
+* **Dynamic Inventory Display:** Listings are handled by dedicated sibling components: **`PetrolVehicles.jsx`** and **`EVVehicles.jsx`**.
+* **The Power of Portals:** Critical details (like vehicle specs and seller info) pop up instantly via the **`VehicleDetailsModal.jsx`** component, rendered using React Portals, without losing your place on the main page.
+* **Launch Urgency:** The **`LaunchCountdown.jsx`** component provides live timer functionality for upcoming deals.
 
 ### Backend Infrastructure (Node.js/Express Ready)
 The backend is structured to support modular, role-based operations and is prepared for MongoDB integration.
@@ -31,7 +31,6 @@ The backend is structured to support modular, role-based operations and is prepa
 | :--- | :--- |
 | **Frontend Core** | **React.js** (Functional Components, Hooks) |
 | **Routing** | **React Router DOM** (`useNavigate`, `Routes`) |
-| **UX/Animation** | **React Slick** (Image Carousels) |
 | **Authentication** | Custom **AuthService** with `localStorage` (for persistence) |
 
 ---
@@ -42,7 +41,7 @@ The backend is structured to support modular, role-based operations and is prepa
 * **Instant Search & Filtering:** Functional search logic filtering by Make, Model, and Price Range.
 * **Detail Modal:** Displays full vehicle specs, shop address, and dealer contact information.
 * **Test Ride Booking:** Dedicated full-page booking form (`/booking-form`) that captures necessary details.
-* **Authentication:** Fully functional **Customer Login/Register** and **Dealer Login/Register** flows.
+* **Authentication:** Fully functional Customer Login/Register and **Dealer Login/Registration** flows (implemented using `DealerLogin.jsx` and `DealerRegistration.jsx`).
 * **Dealer Dashboard:** Implemented the foundational dashboard view for dealers to manage listings and view stats.
 * **Personalized Favorites:** Implemented the structure for **Add to Favorites** for logged-in users.
 
